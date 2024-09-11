@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Kamau</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- header design -->
-    <header class="header"></header>
-    <a href="#" class="logo">Daniel.</a>
+    <header class="header">
+      <a href="#" class="logo">Daniel.</a>
 
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Daniel Kamau</span></h1>
+        <div class="text-animate">
+          <h3>Fullstack Developer | DevOps Engineer</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+          blanditiis, ab officiis perspiciatis totam consectetur soluta modi
+          exercitationem dicta sequi illo debitis atque consequuntur nihil.
+          Totam facilis eveniet ea neque?
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn">Hire Me</a>
+          <a href="#" class="btn">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="home-sci">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
