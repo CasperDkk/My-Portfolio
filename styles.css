@@ -1,118 +1,29 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #252526;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    color: #61dafb;
-    font-size: 2.5rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
-    color: #d4d4d4;
     text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    color: #61dafb;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-h2 {
-    color: #61dafb;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about p, .education p, .contact form, .projects ul, .interests ul {
-    font-size: 1.1rem;
-}
-
-.skills ul, .projects ul, .interests ul {
-    list-style: none;
-}
-
-.skills li, .projects li, .interests li {
-    background-color: #2a2a2a;
-    margin: 0.5rem 0;
-    padding: 0.8rem;
-    border-radius: 5px;
-}
-
-.skills li, .projects li a {
-    color: #d4d4d4;
-    text-decoration: none;
-}
-
-.skills li:hover, .projects li:hover {
-    background-color: #333333;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact form label {
-    margin-top: 1rem;
-}
-
-.contact form input, .contact form textarea {
-    padding: 0.5rem;
     border: none;
-    border-radius: 5px;
-    background-color: #2a2a2a;
-    color: #d4d4d4;
+    outline: none;
+    scroll-behavior: smooth;
+    Font-family: 'Poppins', sans-serif; 
 }
 
-.contact form button {
-    margin-top: 1rem;
-    padding: 0.7rem;
-    background-color: #61dafb;
-    color: #1e1e1e;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+:root {
+    --bg--color: #081b29;
+    --second--bg--color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;   
 }
 
-.contact form button:hover {
-    background-color: #4caf50;
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #252526;
-    color: #d4d4d4;
-    font-size: 0.9rem;
+body{
+    background: var(--bg--color);
+    color: var(--text-color);
 }
