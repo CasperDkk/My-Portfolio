@@ -148,7 +148,7 @@ section{
     opacity: 0;
     animation: CursorSlide 6s linear infinite,
     TopSlide 1s ease forwards;
-    animation-delay: 2s,1.2s;
+    animation-delay: 1.2s,.5s;
 }
 @keyframes CursorSlide {
     0%,10%,100%{
@@ -170,7 +170,7 @@ section{
     transform: translateX(100px);
     opacity: 0;
     animation: leftSlide 1s ease forwards;
-    animation-delay: 1.4s;
+    animation-delay: 1.2s;
 }
 @keyframes leftSlide{
     0%{
@@ -364,7 +364,7 @@ section.start-animation .aboutImg{
     }
 }
 .text-content2{
-    text-align: center;
+    text-align: left;
 }
 .text-content2 h2{
     font-size: 2.6rem;
@@ -437,7 +437,7 @@ section.start-animation .text-content2 .btn{
 }
 section.start-animation .column:nth-child(1){
     animation: Right 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.5s;
 }
 
 .column:nth-child(2){
@@ -446,17 +446,17 @@ section.start-animation .column:nth-child(1){
 }
 section.start-animation .column:nth-child(2){
     animation: Left 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.8s;
 }
 .column h2{
-    font-size: 2.5rem ;
+    font-size: 2.5rem;
     margin: 2rem 0 1rem 1.96rem;
     transform: translateY(-100px);
     opacity: 0;
 }
 section.start-animation .column h2{
     animation: top 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.8s;
 }
 
 .box{
@@ -517,8 +517,8 @@ section.start-animation .column h2{
     transform: translateY(-100px);
 }
 section.start-animation .skill-title{
-    animation: top 1s ease forwards;
-    animation-delay: 1.2s;
+    animation: top .8s ease forwards;
+    animation-delay: 0.8s;
 }
 .skill-content{
     width: 100%;
@@ -527,7 +527,7 @@ section.start-animation .skill-title{
 .skill-box{
     height: 100%;
     width: 100%;
-    padding: 8rem 4rem;
+    padding: 2rem 4rem;
     background: rgba(255,255,255,.1);
     border-radius: 1rem;
 }
@@ -569,13 +569,13 @@ section.start-animation .skill-box2{
     background: #00abf0;
 }
 .bar-1{
-    width: 90%;
+    width: 60%;
 }
 .bar-2{
-    width: 80%;
+    width: 50%;
 }
 .bar-3{
-    width: 70%;
+    width: 50%;
 }
 /* contact section */
 section form{
@@ -621,8 +621,8 @@ section.start-animation input:nth-child(2){
     transform: translateY(100px);
 }
 section.start-animation textarea{
-    animation:Bottom 1s ease forwards;
-    animation-delay: 1.2s;
+    animation:Bottom 0.5s ease forwards;
+    animation-delay: 0.8s;
 }
 input::placeholder{
     font-size: 1.5rem;
@@ -754,3 +754,92 @@ footer i{
         width: 100%;
     }
 }
+
+/* Interests and Projects section styling */
+.interests, .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    gap: 2rem;
+}
+
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.project-item h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #fff;
+    background: #00abf0;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.project-item a:hover {
+    background: #008ecf;
+}
+
+/* General button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .cv-download {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .cv-download p {
+    font-size: 18px;
+    color: #ccc; /* Light color for the text */
+    margin-bottom: 10px;
+  }
+  
+  .cv-download .btn {
+    background-color: #28a745; /* Change to green for the CV download button */
+  }
+  
+  .cv-download .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
